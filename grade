@@ -1,0 +1,203 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+char name[50];
+
+int referal;
+
+float cgpa;
+
+int certification;
+
+int credit;
+
+int recruit;
+
+int communication;
+
+int knowledge;
+
+int code;
+
+int innovate;
+
+int total;
+
+int personality;
+
+int experience;
+
+int intern;
+
+printf("Enter your name: \n");
+
+scanf("%s",name);
+
+printf("Enter cgpa: \n");
+
+scanf("%f",&cgpa);
+
+printf("Enter number of credits: \n");
+
+scanf("%d",&credit);
+
+printf("Enter number of certifications: \n");
+
+scanf("%d",&certification);
+
+printf("Enter number of referals: \n");
+
+scanf("%d",&referal);
+
+printf("Enter number of years of experience: \n");
+
+scanf("%d",&experience);
+
+printf("Enter number of internships: \n");
+
+scanf("%d",&intern);
+
+printf("NAME:%s \n",name);
+
+printf("CGPA:%f \n",cgpa);
+
+printf("CREDITS:%d \n",credit);
+
+printf("CERTIFICATIONS:%d \n",certification);
+
+printf("REFERALS:%d \n",referal);
+
+printf("YEARS OF EXPERIENCE:%d \n",experience);
+
+printf("NUMBER OF INTERNSHIPS:%d \n",intern);
+
+if(cgpa>=8.5 && credit>=5 && certification>=2 && referal>=1 && intern>=1)
+
+{
+
+            printf("THE CANDIDATE IS ACCEPTED FOR AN INTERVIEW IN MICROSOFT\n");
+
+            printf("IN THE INTERVIEW CANDIDATE WILL BE GIVEN MARKS OUT OF 10 FOR EVERY HIRING PARAMETER\n");
+
+            printf("THE EVALUATION OF CANDIDATE IN INTERVIEW IS AS FOLLOWS: \n");
+
+            printf("Enter marks for technical knowledge: \n");
+
+            scanf("%d",&knowledge);
+
+            printf("Enter marks for coding skills: \n");
+
+            scanf("%d",&code);
+
+            printf("Enter marks for innovation: \n");
+
+            scanf("%d",&innovate);
+
+            printf("Enter marks for personality: \n");
+
+            scanf("%d",&personality);
+
+            printf("Enter marks for communication skills: \n");
+
+            scanf("%d",&communication);
+
+            printf("TECHNICAL KNOWLEDGE:%d \n",knowledge);
+
+            printf("CODING SKILLS:%d \n",code);
+
+            printf("INNOVATION:%d \n",innovate);
+
+            printf("PERSONALITY:%d \n",personality);
+
+            printf("COMMUNICATION SKILLS:%d \n",communication);
+
+            total=knowledge+code+innovate+personality+communication;
+
+            printf("total marks=%d \n",total);
+
+            if(total>=40 && experience>=6)
+
+            {
+
+                printf("CANDIDATE HAS BEEN HIRED AS PROJECT MANAGER\n");
+
+                printf("CANDIDATE WILL RECEIVE PACKAGE OF 30 LPA");
+
+            }
+
+            else if(total>=40 && experience>=4)
+
+            {
+
+                printf("CANDIDATE HAS BEEN HIRED AS ASSISTANT MANAGER\n");
+
+                printf("CANDIDATE WILL RECEIVE PACKAGE OF 25 LPA\n");
+
+            }
+
+            else if(total>=40 && experience<=3)
+
+            {
+
+                printf("CANDIDATE HAS BEEN HIRED AS SOFTWARE ENGINEER\n");
+
+                printf("CANDIDATE WILL RECEIVE PACKAGE OF 20 LPA\n");
+
+            } 
+
+            else if(total>=35)
+
+                {
+
+                    printf("CANDIDATE HAS BEEN HIRED AS SOFTWARE DEVELOPER\n");
+
+                    printf("CANDIDATE WILL RECEIVE PACKAGE OF 15 LPA\n");
+
+                }
+
+                else if(total>=30)
+
+                    {
+
+                        printf("CANDIDATE HAS BEEN HIRED AS JUNIOR SOFTWARE ENGINEER\n");
+
+                        printf("CANDIDATE WILL RECEIVE PACKAGE OF 10 LPA\n");
+
+                    }
+
+                    else if(total>=25)
+
+                    {
+
+                     printf("CANDIDATE HAS BEEN HIRED AS INTERN SOFTWARE ENGINEER\n");
+
+                     printf("CANDIDATE WILL RECEIVE PACKAGE OF 5 LPA\n");
+
+                    }
+
+                     else
+
+                            {
+
+                                printf("CANDIDATE HAS BEEN REJECTED IN INTERIEW PROCESS\n");
+
+                            }
+
+               
+
+        }
+
+      else
+
+{
+
+    printf("CANDIDATE IS REJECTED FOR INTERVIEW IN MICROSOFT");
+
+}
+
+    return 0;
+
+}
